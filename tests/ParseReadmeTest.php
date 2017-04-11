@@ -1,6 +1,10 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
+/**
+ * This test script reads the RegEx, the Positive List, and the Negative List from README.md. It checks their
+ * validity and reports if anything does not match up.
+ */
 class ParseReadmeTest extends TestCase
 {
 	private $regex;
