@@ -1,0 +1,7 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="pobox">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>

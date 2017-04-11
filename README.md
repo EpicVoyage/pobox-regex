@@ -1,5 +1,5 @@
 # pobox-regex
-A Better PO Box Filter
+A Better PO Box Filter, built around real-world address problems.
 
 # The RegEx
 ````JavaScript
@@ -43,3 +43,11 @@ A Better PO Box Filter
 * 123 Poblano Lane, Edinburg, TX
 * 123 P O Davis Drive, Auburn, AL
 * 123 Postal Circle, Manitowish Waters, WI
+
+# Verification with PHP
+* Clone repo
+* `composer install`
+* `phpunit`
+
+# Credits
+Some inspiration from [Greg Ferrel](https://gist.github.com/gregferrell/7494667).
