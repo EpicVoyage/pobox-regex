@@ -1,5 +1,5 @@
 # pobox-regex
-A Better PO Box Filter, built around real-world address problems.
+A better, simple PO Box Filter that is built around real-world address problems.
 
 # The RegEx
 ````JavaScript
@@ -51,3 +51,6 @@ A Better PO Box Filter, built around real-world address problems.
 
 # Credits
 Some inspiration from [Greg Ferrel](https://gist.github.com/gregferrell/7494667).
+
+# Further Pointers
+This project aims at a simple approach. You should look into address verification services If you need to identify bad street numbers, zip codes and other factors.
