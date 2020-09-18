@@ -3,10 +3,14 @@ A better, simple PO Box Filter that is built around real-world address problems.
 
 # The RegEx
 ````JavaScript
-/(?:P(?:ost(?:al)?)?[\.\-\s]*(?:(?:O(?:ffice)?[\.\-\s]*)?B(?:ox|in|\b|\d)|o(?:ffice|\b)(?:[-\s]*\d)|code)|box[-\s\b]*\d)/i
+/(?:P(?:ost(?:al)?)?[\.\-\s]*(?:(?:O(?:ffice)?[\.\-\s]*)?B(?:ox|in|\b|\d)|o(?:ffice|\b|\.)(?:[-\s]*\d)|code)|box[-\s\b]*\d)/i
 ````
 
 # Positive List
+* PO 123
+* P.O 123
+* P.O. 123
+* P. O. 123
 * PO Box 123
 * P O box 123
 * P. O. Box 123
