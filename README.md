@@ -3,7 +3,7 @@ A better, simple PO Box Filter that is built around real-world address problems.
 
 # The RegEx
 ````JavaScript
-/(?:P(?:ost(?:al)?)?[\.\-\s]*(?:(?:O(?:ffice)?[\.\-\s]*)?B(?:ox|in|\b|\d)|o(?:ffice|\b|\.)(?:[-\s]*\d)|code)|box[-\s\b]*\d)/i
+/(?:P(?:ost(?:al)?)?[\.\-\s]*(?:(?:[O|0](?:ffice)?[\.\-\s]*)?B(?:ox|in|\b|\d)|[o|0](?:ffice|\b|\.)(?:[-\s]*\d)|code)|box[-\s\b]*\d)/i
 ````
 
 # Positive List
@@ -40,6 +40,12 @@ A better, simple PO Box Filter that is built around real-world address problems.
 * box 123
 * Box123
 * Box-123
+* P0 123
+* P.0 123
+* P.0. 123
+* P.0B 123
+* P.0.B 123
+* P.0.B. 123
 
 # Negative List
 * 123 Box Turtle Circle, Sarasota, FL
