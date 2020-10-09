@@ -12,7 +12,7 @@ class ParseReadmeTest extends TestCase
 	/**
 	 * Retrieve the RegEx that we will be testing against.
 	 */
-	protected function setUp() {
+	protected function setUp(): void {
 		$this->regex = $this->parseRegex();
 	}
 
@@ -20,14 +20,14 @@ class ParseReadmeTest extends TestCase
 	 * @dataProvider positiveList
 	 */
 	public function testPositiveList($positive) {
-		$this->assertRegExp($this->regex, $positive);
+		$this->assertMatchesRegularExpression($this->regex, $positive);
 	}
 
 	/**
 	 * @dataProvider negativeList
 	 */
 	public function testNegativeList($negative) {
-		$this->assertNotRegExp($this->regex, $negative);
+		$this->assertDoesNotMatchRegularExpression($this->regex, $negative);
 	}
 
 	/**
